@@ -1,4 +1,4 @@
-# asset_tracking_blockchain
+# Asset Tracking Blockchain
 Asset tracking refers to the method of tracking physical assets, either by scanning the barcode labels attached to the assets or by using tags such as GPS, BLE or RFID, which broadcast their location. It provides a way to track and schedule assets for better efficiency. It also maintains a sense of ownership, where each asset can be mapped with the owner during the life cycle of the asset.
 
 
