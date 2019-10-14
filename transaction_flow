@@ -1,0 +1,31 @@
+Transaction Flow: 
+
+The transaction flow is as follows:
+
+Fetch the contract and the shipment for which this transaction is being called upon.
+
+Calculate the total payout by multiplying the unit price with the unit cost.
+
+Update the shipment status to “Arrived”.
+
+If the shipment is late as per the contract, set the payout to 0.
+
+Map the contract temperature and acceleration values with the asset recorded temperature 
+and acceleration values.
+
+Calculate the penalty factor for temperature and acceleration values. 
+
+A sample penalty factor could be 
+(contract minimum temperature - lowest reading on asset) * the penalty factor detailed in the contract.
+
+Multiply the penalty with the total number of assets.
+
+Subtract the total penalty from the total payout.
+
+Update the balance and save the exporter participant over the blockchain state storage.
+
+Update the balance and save the importer participant over the blockchain state storage.
+
+Update the balance and save the shipper participant over the blockchain state storage.
+
+Update the shipment asset registry with the new Status in the Shipment Asset Registry.
